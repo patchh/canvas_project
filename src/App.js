@@ -1,5 +1,5 @@
 import './App.css';
-import drawCircle from './script.js'
+import './script.js'
 
 function App() {
   return (

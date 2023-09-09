@@ -1,12 +1,59 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
 }
 
 #canvas1 {
+  background: transparent;
+}
+
+#fileInput {
   position: absolute;
-  background: white;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slide-container {
+  margin-top: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #04AA6D;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+  border-radius: 50%;
 }

@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="App.css" />
 </head>
 <body>
-  <canvas id="canvas1"></canvas>
+  <input type="file" id="fileInput">
+  <div class="canvas-container">
+    <canvas id="canvas1" width="800" height="600"></canvas>
+    <div class="slide-container">
+      <input type="range" min="1" max="10" value="2" class="slider" id="pencilSizeRange">
+      <p>Pencil Size: <span id="pencilSize">2</span></p>
+    </div>
+  </div>
   <script src="script.js"></script>
   <div id="root"></div>
 </body>
